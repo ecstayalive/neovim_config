@@ -1,0 +1,6 @@
+require("plugin/lualine_config")
+require("plugin/neo_tree_config")
+require("plugin/nvim_treesitter")
+require("plugin/coc_config")
+require("plugin/lsp_config")
+require("plugin/edgy_config")
