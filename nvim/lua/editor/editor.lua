@@ -2,7 +2,7 @@
 vim.o.mouse = "a"
 -- 显示行号
 vim.o.number = true
--- 高亮说在行
+-- 高亮所在行
 vim.wo.cursorline = true
 -- ruler
 vim.wo.colorcolumn = "120"
@@ -35,6 +35,8 @@ vim.wo.wrap = false
 vim.o.backup = false
 vim.o.writebackup = false
 vim.o.swapfile = false
+-- vim.o.hidden = true
+-- vim.o.updatetime = 300
 -- slipwindow 从下面和右边出现
 vim.o.splitbelow = true
 vim.o.splitright = true
@@ -51,9 +53,9 @@ function map(mode, lhs, rhs, opts)
     end
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
-
+-- 快速换行
 map("i", "<C-l>", "<Esc>o")
-
+-- leader key, default "\"
+-- vim.g.mapleader = " "
 -- 主题
 vim.cmd("colorscheme onedark")
-

@@ -1,6 +1,4 @@
 {
-  "coc-json": { "branch": "master", "commit": "a44f9500f18caf196a048f3f317c694562288be5" },
-  "coc-tsserver": { "branch": "master", "commit": "d8a2f44d64fcefaf6a2087cd5d0b7783393b73d7" },
   "coc.nvim": { "branch": "master", "commit": "fab97c7db68f24e5cc3c1cf753d3bd1819beef8f" },
   "edgy.nvim": { "branch": "main", "commit": "4ccc1c67ae2b1a0c55f18c83d03b714e2bb1bae4" },
   "lazy.nvim": { "branch": "main", "commit": "dac844ed617dda4f9ec85eb88e9629ad2add5e05" },
@@ -15,5 +13,6 @@
   "nvim-web-devicons": { "branch": "master", "commit": "cfc8824cc1db316a276b36517f093baccb8e799a" },
   "onedarkpro.nvim": { "branch": "main", "commit": "45d12deedc61a19f9e3ed0e8dcb0be91928f723b" },
   "plenary.nvim": { "branch": "master", "commit": "267282a9ce242bbb0c5dc31445b6d353bed978bb" },
+  "startup.nvim": { "branch": "master", "commit": "5295eabe35eb66d0b355ada0ca06ec8bdb8f9698" },
   "vim-illuminate": { "branch": "master", "commit": "76f28e858f1caae87bfa45fb4fd09e4b053fc45b" }
 }

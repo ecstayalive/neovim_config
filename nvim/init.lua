@@ -13,16 +13,27 @@ end
 vim.opt.rtp:prepend(lazypath)
 -- load lazy nvim
 require("lazy").setup({
-    -- Themes
+    -- Eidtor appearance settings
+    -- themes
     {"olimorris/onedarkpro.nvim"},
     {"nvim-lualine/lualine.nvim"},
     {"nvim-tree/nvim-web-devicons", opt=true},
-    -- Code auto-complete
-    {"neovim/nvim-lspconfig"},
-    {"neoclide/coc.nvim"},
-    {"neoclide/coc-json"},
-    {"neoclide/coc-tsserver"},
-    -- Notify
+    {"folke/edgy.nvim",event = "VeryLazy",opts = {}},
+    -- startup appearance
+    {
+      "startup-nvim/startup.nvim",
+      requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+    },
+    -- explorer
+    {
+      "nvim-neo-tree/neo-tree.nvim",
+      requires = {
+          "nvim-lua/plenary.nvim",
+          "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+          "MunifTanjim/nui.nvim",
+      },
+    },
+    -- beautify notify
     {"MunifTanjim/nui.nvim"},
     {"rcarriga/nvim-notify"},
     {
@@ -42,19 +53,16 @@ require("lazy").setup({
     },
     {"RRethy/vim-illuminate"},
     {"nvim-lua/plenary.nvim"},
+
+    -- Eidtor edit settings
+    -- code auto-complete
+    {"neovim/nvim-lspconfig"},
+    {"neoclide/coc.nvim"},
+    -- code highlight
     {"nvim-treesitter/nvim-treesitter"},
-    {
-        "nvim-neo-tree/neo-tree.nvim",
-        requires = { 
-            "nvim-lua/plenary.nvim",
-            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-            "MunifTanjim/nui.nvim",
-        },
-    },
+    -- auto pair
     {"windwp/nvim-autopairs", event= "InsertEnter", opts={}},
-    {"folke/edgy.nvim",event = "VeryLazy",opts = {}},
 })
 
 -- load editor configuration
 require("init")
-
