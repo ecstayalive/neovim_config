@@ -18,12 +18,13 @@ require("lazy").setup({
     {"olimorris/onedarkpro.nvim"},
     {"nvim-lualine/lualine.nvim"},
     {"nvim-tree/nvim-web-devicons", opt=true},
-    {"folke/edgy.nvim",event = "VeryLazy",opts = {}},
+    -- {"folke/edgy.nvim",event = "VeryLazy",opts = {}},
     -- startup appearance
     {
       "startup-nvim/startup.nvim",
       requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
     },
+    {"nvim-telescope/telescope.nvim"},
     -- explorer
     {
       "nvim-neo-tree/neo-tree.nvim",
