@@ -6,5 +6,5 @@ function map(mode, lhs, rhs, opts)
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
-map("n", "<C-b>", ":Neotree reveal toggle<CR>")
-map("n", "<C-a>", ":Neotree focus<CR>")
+vim.api.nvim_set_keymap("n", "<C-b>", ":Neotree reveal toggle<CR>", {noremap = true, silent=true})
+vim.api.nvim_set_keymap("n", "<leader>a", ":Neotree focus<CR>", {noremap = true, silent=true})
