@@ -34,6 +34,8 @@ require("lazy").setup({
           "MunifTanjim/nui.nvim",
       },
     },
+    -- terminal
+    {'akinsho/toggleterm.nvim', version = "*", config = true},
     -- beautify notify
     {"MunifTanjim/nui.nvim"},
     {"rcarriga/nvim-notify"},

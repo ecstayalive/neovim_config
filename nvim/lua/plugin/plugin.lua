@@ -1,4 +1,5 @@
 require("plugin/lualine_config")
+require("plugin/toggleterm_config")
 require("plugin/neo_tree_config")
 require("plugin/nvim_treesitter_config")
 require("plugin/coc_config")
