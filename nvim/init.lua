@@ -58,6 +58,8 @@ require("lazy").setup({
     {"nvim-lua/plenary.nvim"},
 
     -- Eidtor edit settings
+    -- auto save files
+    {"Pocco81/auto-save.nvim"},
     -- code auto-complete
     {"neovim/nvim-lspconfig"},
     {"neoclide/coc.nvim"},
@@ -66,6 +68,5 @@ require("lazy").setup({
     -- auto pair
     {"windwp/nvim-autopairs", event= "InsertEnter", opts={}},
 })
-
 -- load editor configuration
 require("init")

@@ -8,6 +8,7 @@ vim.api.nvim_set_keymap("n", "K", ":call CocActionAsync('doHover')<CR>", {silent
 vim.api.nvim_set_keymap("n", "<F2>", "<Plug>(coc-rename)", {})
 vim.api.nvim_set_keymap("n", "<leader>ff", ":CocCommand prettier.formatFile<CR>", {noremap = true})
 vim.api.nvim_set_keymap("n", "<leader>o", ":<C-u>CocList outline<cr>", {noremap = true, silent=true})
+vim.api.nvim_set_keymap("n", "<C-t>", ":<C-u>CocList -I symbols<cr>", {noremap=true, silent=true})
 vim.api.nvim_set_keymap("i", "<F12>", "<Esc><Plug>(coc-definition)i", {silent=true})
 vim.api.nvim_set_keymap("i", "<C-Space>", "coc#refresh()", { silent = true, expr = true })
 vim.api.nvim_set_keymap("i", "<CR>", "coc#pum#visible() ? coc#pum#confirm() : '<C-g>u<CR><c-r>=coc#on_enter()<CR>'", {noremap = true, silent = true, expr = true})
