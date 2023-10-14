@@ -65,8 +65,6 @@ require("lazy").setup({
     {"neoclide/coc.nvim"},
     -- code highlight
     {"nvim-treesitter/nvim-treesitter"},
-    -- auto pair
-    {"windwp/nvim-autopairs", event= "InsertEnter", opts={}},
 })
 -- load editor configuration
 require("init")
