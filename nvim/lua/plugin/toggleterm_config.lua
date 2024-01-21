@@ -1,4 +1,10 @@
 require("toggleterm").setup{direction='float'}
 -- vim.api.nvim_set_keymap("t", "<leadet>t", ":ToggleTerm<CR>", {silent=true})
-vim.api.nvim_set_keymap("n", "<leader>t", ":ToggleTerm<CR>", {noremap=true, silent=true})
-vim.api.nvim_set_keymap("i", "<leader>t", "<Esc>:ToggleTerm<CR>", {silent=true})
+vim.api.nvim_set_keymap("t", "<Esc>", "<C-\\><C-n>", {noremap=true, silent=true})
+vim.api.nvim_set_keymap("t", "<C-w>", "<C-\\><C-n><C-w>", {noremap=true, silent=true})
+vim.api.nvim_set_keymap("n", "<leader>t", "<Cmd>exe v:count . 'ToggleTerm'<CR>", {noremap=true, silent=true})
+vim.api.nvim_set_keymap("i", "<leader>t", "<Esc><Cmd>exe v:count . 'ToggleTerm'<CR>", {silent=true})
+vim.api.nvim_set_keymap("t", "<leader>l", "<Cmd> wincmd l<CR>", {noremap=true, silent=true})
+vim.api.nvim_set_keymap("t", "<leader>h", "<Cmd> wincmd h<CR>", {noremap=true, silent=true})
+vim.api.nvim_set_keymap("t", "<leader>j", "<Cmd> wincmd j<CR>", {noremap=true, silent=true})
+vim.api.nvim_set_keymap("t", "<leader>k", "<Cmd> wincmd k<CR>", {noremap=true, silent=true})
