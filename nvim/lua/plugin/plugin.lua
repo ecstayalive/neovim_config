@@ -5,6 +5,8 @@ require("plugin/start_up_config")
 -- require("plugin/start_up_default_config")
 require("plugin/telescope_config")
 require("plugin/auto_save_config")
+-- git signs
+require("plugin/gitsigns_config")
 -- auto completion && LSP Configs
 require("plugin/nvim_cmp_config")
 require("plugin/lsp_config")
