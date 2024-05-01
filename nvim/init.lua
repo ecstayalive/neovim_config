@@ -35,7 +35,7 @@ require("lazy").setup({
       },
     },
     -- terminal
-    {'akinsho/toggleterm.nvim', version = "*", config = true},
+    {"akinsho/toggleterm.nvim", version = "*", config = true},
     -- beautify notify
     {"MunifTanjim/nui.nvim"},
     {"rcarriga/nvim-notify"},
@@ -60,9 +60,40 @@ require("lazy").setup({
     -- Eidtor edit settings
     -- auto save files
     {"Pocco81/auto-save.nvim"},
-    -- code auto-complete
+    -- code auto-complete && lsp
+    -- Auto-completion engine
+  {
+    "hrsh7th/nvim-cmp",
+    dependencies = {
+      -- nvim-cmp
+      "hrsh7th/cmp-nvim-lsp", -- { name = nvim_lsp }
+      "hrsh7th/cmp-buffer",   -- { name = "buffer" },
+      "hrsh7th/cmp-path",     -- { name = "path" }
+      "hrsh7th/cmp-cmdline",  -- { name = "cmdline" }
+      "hrsh7th/nvim-cmp",
+      -- vsnip
+      "hrsh7th/cmp-vsnip",    -- { name = "vsnip" }
+      "hrsh7th/vim-vsnip",
+      "rafamadriz/friendly-snippets",
+      -- lspkind
+      "onsails/lspkind-nvim",
+    },
+  },
+    {"williamboman/mason.nvim"},
+    {"williamboman/mason-lspconfig.nvim"},
     {"neovim/nvim-lspconfig"},
-    {"neoclide/coc.nvim"},
+    {"glepnir/lspsaga.nvim"},
+    {
+      "stevearc/aerial.nvim",
+      opts = {},
+      -- Optional dependencies
+      dependencies = {
+         "nvim-treesitter/nvim-treesitter",
+         "nvim-tree/nvim-web-devicons"
+      },
+    },
+    -- {"williamboman/nvim-lsp-installer"},
+    -- {"neoclide/coc.nvim"},
     -- code highlight
     {"nvim-treesitter/nvim-treesitter"},
 })
