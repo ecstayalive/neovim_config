@@ -8,6 +8,7 @@ require("plugin/auto_save_config")
 -- git signs
 require("plugin/gitsigns_config")
 -- auto completion && LSP Configs
+require("plugin/auto_pairs_config")
 require("plugin/nvim_cmp_config")
 require("plugin/lsp_config")
 require("plugin/lspage_config")

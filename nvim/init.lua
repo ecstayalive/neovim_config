@@ -56,13 +56,20 @@ require("lazy").setup({
     },
     {"RRethy/vim-illuminate"},
     {"nvim-lua/plenary.nvim"},
-
     -- Eidtor edit settings
     -- git
     {"lewis6991/gitsigns.nvim"},
     -- auto save files
     {"Pocco81/auto-save.nvim"},
     -- code auto-complete && lsp
+    -- Auto pairs
+    {
+      'windwp/nvim-autopairs',
+      event = "InsertEnter",
+      config = true
+      -- use opts = {} for passing setup options
+      -- this is equalent to setup({}) function
+    },
     -- Auto-completion engine
     {
       "hrsh7th/nvim-cmp",

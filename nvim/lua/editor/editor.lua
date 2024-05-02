@@ -47,15 +47,19 @@ vim.o.listchars = "space:·"
 vim.o.wildmenu = true
 -- 键盘映射
 function map(mode, lhs, rhs, opts)
-    local options = { noremap = true }
+    local options = { noremap = true, silent = true}
     if opts then
         options = vim.tbl_extend("force", options, opts)
     end
     vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
--- 快速换行
-map("i", "<C-l>", "<Esc>o")
--- leader key, default "\"
--- vim.g.mapleader = " "
 -- 主题
 vim.cmd("colorscheme onedark")
+-- leader key, default "\"
+-- vim.g.mapleader = " "
+-- 快速换行
+map("i", "<C-Enter>", "<Esc>o")
+map("n", "<C-Enter>", "<Esc>o")
+map("i", "<C-l>", "<Esc>o")
+-- autosave
+-- map("i", "<Esc>", "<Esc>:update<CR>")
