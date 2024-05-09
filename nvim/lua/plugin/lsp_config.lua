@@ -73,6 +73,7 @@ lspconfig.bashls.setup({on_attach = on_attach})
 lspconfig.clangd.setup({
   on_attach = on_attach,
   cmd = {
+    "clangd",
     "--all-scopes-completion",
     "--query-driver=/usr/bin/clang++",
     "--background-index",
