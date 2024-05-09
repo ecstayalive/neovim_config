@@ -70,7 +70,31 @@ lspconfig.lua_ls.setup({on_attach = on_attach})
 lspconfig.tsserver.setup({on_attach = on_attach})
 lspconfig.tailwindcss.setup({on_attach = on_attach})
 lspconfig.bashls.setup({on_attach = on_attach})
-lspconfig.clangd.setup({on_attach = on_attach})
+lspconfig.clangd.setup({
+  on_attach = on_attach,
+  cmd = {
+    "--all-scopes-completion",
+    "--query-driver=/usr/bin/clang++",
+    "--background-index",
+    "--clang-tidy",
+    "--clang-tidy-checks=bugprone-*, google-*, misc-*, modernize-*, performance-*, portability-*, readability-*",
+    "--compile-commands-dir=build",
+    "--completion-parse=auto",
+    "--completion-style=detailed",
+    "--enable-config",
+    "--fallback-style=google",
+    "--function-arg-placeholders",
+    "--header-insertion=never",
+    "-header-insertion-decorators",
+    "--inlay-hints",
+    "--include-cleaner-stdlib",
+    "--log=verbose",
+    "--pch-storage=memory",
+    "--pretty",
+    "--ranking-model=decision_forest",
+    "-j=6"
+  }
+})
 lspconfig.dockerls.setup({on_attach = on_attach})
 lspconfig.html.setup({on_attach = on_attach})
 lspconfig.jsonls.setup({on_attach = on_attach})
