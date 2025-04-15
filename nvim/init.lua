@@ -101,8 +101,6 @@ require("lazy").setup({
          "nvim-tree/nvim-web-devicons"
       },
     },
-    -- {"williamboman/nvim-lsp-installer"},
-    -- {"neoclide/coc.nvim"},
     -- code highlight
     {"nvim-treesitter/nvim-treesitter"},
 })

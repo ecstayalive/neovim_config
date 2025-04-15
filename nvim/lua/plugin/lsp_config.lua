@@ -6,13 +6,12 @@ require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = {
     "lua_ls",
-    "tsserver",
+    "ts_ls",
     "tailwindcss",
     "bashls",
     "clangd",
     "dockerls",
     "html",
-    "jsonls",
     "pyright",
     "rust_analyzer",
     "yamlls",
@@ -67,7 +66,7 @@ end
 -- 1. use `:Mason` to install corresponding LSP
 -- 2. add configuration below
 lspconfig.lua_ls.setup({on_attach = on_attach})
-lspconfig.tsserver.setup({on_attach = on_attach})
+lspconfig.ts_ls.setup({on_attach = on_attach})
 lspconfig.tailwindcss.setup({on_attach = on_attach})
 lspconfig.bashls.setup({on_attach = on_attach})
 lspconfig.clangd.setup({
