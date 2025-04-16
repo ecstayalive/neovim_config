@@ -97,7 +97,6 @@ lspconfig.clangd.setup({
 })
 lspconfig.dockerls.setup({on_attach = on_attach})
 lspconfig.html.setup({on_attach = on_attach})
-lspconfig.jsonls.setup({on_attach = on_attach})
 lspconfig.pyright.setup({on_attach = on_attach})
 lspconfig.rust_analyzer.setup({on_attach = on_attach})
 lspconfig.yamlls.setup({on_attach = on_attach})
